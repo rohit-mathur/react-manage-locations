@@ -1,0 +1,80 @@
+@import './../../assets/scss/variables.scss';
+@import './../../assets/scss/mixin.scss';
+
+.location-modal{
+    .form-group{
+        label{
+            font-size: size(12);
+            color: $text-color;
+            margin: 0;
+        }
+        .form-control{
+            border: none;
+            padding-left: 0;
+            padding-right: 0;
+            border-bottom: 1px solid $light-gray;
+            border-radius: 0;
+            &:focus{
+                box-shadow: none;
+                border-bottom: size(2) solid $btn-bg-color;
+            }
+        }
+        .form-dropdown{
+            div[class*='-control']{
+                border:none;
+                border-bottom: 1px solid $light-gray;
+            }
+            div[class*='-ValueContainer']{
+                padding-left:0;
+                padding-right: 0;
+            }
+            div[class*='-IndicatorsContainer']{
+                display: none;
+            }
+            
+        }
+    }
+}
+
+.ReactTags__tags {
+    position: relative;
+    div.ReactTags__tagInput {
+        width: 100%;
+        border-radius: size(2);
+        display: inline-block;
+        order: 1;
+        .ReactTags__tagInputField {
+            height: size(38);
+            margin-top: size(0);
+            font-size: size(12);
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid $light-gray;
+            border-radius: 0;
+            border-image: none;
+            &:focus{
+                outline:none;
+                border-bottom: size(2) solid $btn-bg-color
+            }
+        }
+    }
+    .ReactTags__selected{
+        display: flex;
+        flex-wrap: wrap;
+        .ReactTags__tag {
+            border: 1px solid $outline-color;
+            background: #eee;
+            font-size: size(12);
+            display: inline-block;
+            padding: size(5);
+            margin: size(5);
+            border-radius: size(2);
+            order:2;
+            .ReactTags__remove {
+                color: #aaa;
+                margin-left: size(5);
+                cursor: pointer;
+            }
+        }
+    }
+}

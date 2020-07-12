@@ -1,0 +1,162 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './icons.scss';
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
+}
+
+body{
+    background-color: $bg-color;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.cHiIVE, .beBIGo, .bXrKTG, .edEgBr{
+    display:none;
+}
+.kOBYKu{
+    border-radius: size(25);
+    box-shadow: 0 size(5) size(5) $outline-color;
+    background-color: $color-white;
+    div{
+        background-color:$color-white;
+        border-right: none;
+        border-bottom: none;
+        font-size: size(14);
+    }
+}
+.ijEzz{
+    margin:8px 0;
+    border-radius: size(25);
+    box-shadow: 0 size(5) size(5) $outline-color;
+    overflow: hidden;
+    background-color: $color-white;
+    align-items:center;
+    div{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        border-right: none;
+        border-bottom: none;
+        font-size: size(14);
+    }
+}
+
+div[class*='paginations---table-pagination---'] {
+    background-color:$color-white;
+    text-align: center;
+    border-radius: size(25);
+    box-shadow: 0 size(5) size(5) $outline-color;
+  }
+
+  div[class*='paginations---table-pagination-block---'] {
+    display: inline-block;
+  }
+
+.spinner-container{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(255,255,255,0.5);
+    .spinner-border{
+        position: absolute;
+        left: calc(50% - 14px);
+        top: calc(50% - 14px);
+    }
+}
+
+.custom-modal{
+    .modal-title{
+        font-size:size(16);
+        color: $btn-bg-color;
+    }
+    .modal-content{
+        border: none;
+        border-radius: 0;
+    }
+    .modal-header{
+        border:none;
+    }
+
+    .modal-footer{
+        border:none;
+        padding-top:0;
+        .btn-cancel, .btn-save{
+            width: size(100);
+        }
+        .btn-save{
+            background-color: $btn-bg-color;
+            border-color: $btn-bg-color;
+            &:hover{
+                box-shadow: 0 0 size(5) $btn-bg-color;
+            }
+            &:focus, &:active{
+                background-color: $btn-bg-color;
+            border-color: $btn-bg-color;
+            }
+            &:focus:active{
+                background-color: $btn-bg-color;
+            border-color: $btn-bg-color;
+            box-shadow: 0 0 size(5) $btn-bg-color;
+        }
+        }
+        .btn-cancel{
+            background-color: $color-secondary;
+            border-color: $color-secondary;
+            &:hover{
+                box-shadow: 0 0 size(5) $color-secondary;
+            }
+            &:focus, &:active{
+                background-color: $color-secondary;
+            border-color: $color-secondary;
+            }
+            &:focus, &:active{
+                background-color: $color-secondary;
+            border-color: $color-secondary;
+            box-shadow: 0 0 size(5) $color-secondary;
+            }
+        }
+    }
+}
+.location-modal{
+    .form-group{
+        label{
+            font-size: size(12);
+            color: $text-color;
+            margin: 0;
+        }
+        .form-control{
+            border: none;
+            padding-left: 0;
+            padding-right: 0;
+            border-bottom: 1px solid $light-gray;
+            border-radius: 0;
+            &:focus{
+                box-shadow: none;
+                border-bottom: size(2) solid $btn-bg-color;
+            }
+        }
+        .form-dropdown{
+            div[class*='-control']{
+                border:none;
+                border-bottom: 1px solid $light-gray;
+            }
+            div[class*='-ValueContainer']{
+                padding-left:0;
+                padding-right: 0;
+            }
+            div[class*='-IndicatorsContainer']{
+                display: none;
+            }
+            
+        }
+    }
+}

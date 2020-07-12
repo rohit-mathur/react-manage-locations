@@ -1,0 +1,54 @@
+@import './../../assets/scss/variables.scss';
+@import './../../assets/scss/mixin.scss';
+
+.topHeader{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    &-title{
+        color: $text-color;
+        font-size: size(14);
+        font-weight: bold;
+    }
+    .col{
+        flex-grow: initial;
+        flex-basis: initial;
+        width: auto;
+    }
+    .add-location-btn{
+        font-size: size(14);
+        background-color: $btn-bg-color;
+        border-color: $btn-bg-color;
+        border-radius: size(25);
+        &:focus:active{
+            background-color: $btn-bg-color;
+        border-color: $btn-bg-color;
+        box-shadow: 0 0 size(5) $btn-bg-color;
+    }
+    &:focus, &:active{
+        background-color: $btn-bg-color;
+        border-color: $btn-bg-color;
+        box-shadow: 0 0 size(5) $btn-bg-color;
+    }
+        &:hover{
+    box-shadow: 0 0 size(5) $btn-bg-color;
+        }
+    }
+}
+
+.no-locations{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    .marker-container{
+        background-color:#d8d8d8;
+        padding:size(40);
+        flex-shrink: 1;
+        border-radius: 50%;
+    }
+    &-message{
+        p{
+            color:$text-color;
+        }
+    }
+}

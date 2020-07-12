@@ -1,0 +1,46 @@
+$base-size:16;
+$item: 50;
+
+@function size($target, $context: $base-size) {
+    @return ($target / $context) * 1rem;
+}
+
+@mixin padding-list {
+    @for $i from 1 through $item {
+      .padding-left-#{$i} {
+        padding-left: size($i);
+      }
+      .padding-right-#{$i} {
+        padding-right: size($i);
+      }
+      .padding-bottom-#{$i} {
+        padding-bottom: size($i);
+      }
+      .padding-top-#{$i} {
+        padding-top: size($i);
+      }
+      .padding-#{$i} {
+        padding: size($i);
+      }
+    }
+  }
+
+  @mixin margin-list {
+    @for $i from 1 through $item {
+      .margin-left-#{$i} {
+        margin-left: size($i);
+      }
+      .margin-right-#{$i} {
+        margin-right: size($i);
+      }
+      .margin-bottom-#{$i} {
+        margin-bottom: size($i);
+      }
+      .margin-top-#{$i} {
+        margin-top: size($i);
+      }
+      .margin-#{$i} {
+        margin: size($i);
+      }
+    }
+  }

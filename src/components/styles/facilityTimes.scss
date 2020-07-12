@@ -1,0 +1,68 @@
+@import './../../assets/scss/variables.scss';
+@import './../../assets/scss/mixin.scss';
+
+.facility-time-modal{
+    .time-container{
+        display: flex;
+        &.pr-0{
+            padding-left:size(30);
+        }
+        .time-field{
+            flex:1;
+            flex-grow: 0.8;
+            &:focus{
+                box-shadow: none;
+                border: size(2) solid $btn-bg-color;
+            }
+        }
+    }
+    .form-check-input{
+        position: static;
+        margin:0;
+        margin-right:size(5);
+        &:checked{
+            background-color: red;
+        }
+    }
+    .btn-apply{
+        background-color: $color-white;
+        border-color:$btn-bg-color;
+        color: $btn-bg-color;
+        font-size:size(12);
+        &:hover{
+            background-color: $btn-bg-color;
+            color:$color-white;
+        }
+    }
+    .time-header{
+        &:nth-child(1){
+            padding-left:size(30);
+        }
+        font-weight:700;
+        font-size:size(14);
+    }
+    .day{
+        font-size: size(14);
+    }
+    .meridiem-container{
+        border-radius:size(5);
+        display: inline-block;
+        flex: 1;
+        overflow:hidden;
+        margin-left: size(5);
+        .meridiem{
+            display:inline-block;
+            width:50%;
+            text-align: center;
+            padding:size(7);
+            font-weight:600;
+            background-color: $light-gray;
+            height: 100%;
+            font-size: size(14);
+            &.active{
+                background-color:$btn-bg-color;
+                color:$color-white;
+            }
+        }
+    }
+}
